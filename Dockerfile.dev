@@ -9,4 +9,5 @@ RUN npm install # --silent
 COPY ./ ./
 
 #Default command
+EXPOSE 80
 CMD [ "npm", "run", "start" ]
