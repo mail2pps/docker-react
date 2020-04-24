@@ -2,7 +2,7 @@
 
 
 # Specify the base image
-FROM node:alpine as builder
+FROM node:alpine
 
 WORKDIR /app/
 
