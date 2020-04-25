@@ -6,9 +6,8 @@ services:
 before_install:
     - docker build -t mail2pps/docker-react -f Dockerfile.prod .
 
-script:
-    - docker run -e CI=true mail2pps/docker-react npm run test -- --coverage
-    
+#script:
+#    - docker run -e CI=true mail2pps/docker-react npm run tesym
 deploy:
    provider: elasticbeanstalk
    region: "us-east-2"
